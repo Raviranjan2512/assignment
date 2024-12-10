@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        .mi{
+    float: left;
+    width: 200%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+.ar{
+    float: right;
+    width: 80%;
+    max-width: 120px;
+    height: 80%;
+    display: block;
+    margin: 0 auto 1rem;
+    border-radius: 10px;
+    padding-right: 20px;
+    
+
+}
+h1 {
+    
+    margin-bottom: 0.5rem;
+    padding-left: 40%;
+}
+h2 {
+    margin: auto;
+    text-align: center
+    ;
+}
+
+.ap{
+   
+    padding-top: 20px;   
+}
+.cont1{
+         width: 50%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(202, 10, 10, 0.1);
+}
+label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+}
+input[type="text"], input[type="email"], input[type="date"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+}
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10p
+}
+input[type="submit"]{
+    display: block;
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+}
+.decl{
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+    </style>
+</head>
+<body  >
+    <div class="mini" ><img src="mini.svg" alt="ministry of defence" class="mi">
+        <img src="flag.webp" alt="indian army" class="ar">
+    <h1>MINISTRY OF DEFENCE</h1></div>
+    <!--<h2>INDIAN ARMY</h2>-->
+    <div class="ap">
+    <h2>APPLICATION FORM TO REGISTER</h2></div><hr><div class="cont1">
+        <form>  
+<label for="fn"> Full Name</label>   
+              <input type="text" name="fn" placeholder="Enter Your Full Name" required>
+ 
+    <label for="r1">Gender</label>    
+             <input type="radio"  name="r1"value="male">Male
+             <input type="radio"  name="r1"value="female">Female
+             <input type="radio"  name="r1"value="other">Others
+<label for="dob">Date of Birth</label>
+             <input type="date" name="dob" value="dob" >
+ <label for="ad"> Address</label>    
+          <textarea rows="3" cols="10" name="ad" placeholder="Enter your Address"></textarea>
+<label for="ph">Phone Number</label>
+           <input type="number" name="ph" placeholder="Enter your phone Number" required>
+<label for="hq">Highest Qualification</label>  
+            <select name="hq" required>
+                <option value="select">select</option>
+                <option value="10th">10th pass</option>
+                <option value="12th">12th pass</option>
+                <option value="graduate">Graduate</option>
+            </select> 
+<label for="photo">Upload Your Photo</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>  
+
+<div class="decl">            <input type="checkbox" name="dec" required>
+I hereby declare that all the information provided above is true to the best of my knowledge.  </div>    
+<input type="submit" value="Submit" >
+    </form>
+
+</div>
+</body>
+</html>
